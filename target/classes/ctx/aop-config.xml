@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
+   http://www.springframework.org/schema/aop 
+   http://www.springframework.org/schema/aop/spring-aop-4.0.xsd ">
+
+	<aop:aspectj-autoproxy />
+
+	<!-- <bean id="LogAspect" class="rs.itakademija.DanceLessons.logging.LoggingAspect" />
+
+	<aop:config>
+		<aop:aspect id="aspectLogging" ref="logAspect">
+			Before
+			<aop:pointcut expression="within(rs.itakademija.DanceLessons..*)" id="pointCutBefore"/>
+			<aop:before method="logEnterMethod" pointcut-ref="pointCutBefore"/>
+			
+			After returning
+			<aop:pointcut expression="within(rs.itakademija.DanceLessons..*)" id="pointCutAfterReturning"/>
+			<aop:after-returning method="logReturnResult" returning = "result" pointcut-ref="pointCutAfterReturning"/>
+			
+			After throwing
+			<aop:pointcut expression="within(rs.itakademija.DanceLessons..*)" id="pointCutAfterThrowing"/>
+			<aop:after-throwing method="logError" throwing="error" pointcut-ref="pointCutAfterThrowing"/>
+			
+		</aop:aspect>
+	</aop:config> -->
+
+</beans>
